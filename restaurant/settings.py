@@ -125,24 +125,14 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 
-<<<<<<< HEAD
 import os
 
-# Static files settings
 STATIC_URL = '/static/'  
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),  
 ]
 
-=======
-STATIC_URL = '/static/'  
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),  
-]
-
->>>>>>> c7b7dbd96d77c810054017aa2fe589423bcdbea8
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'  # For optimized static file serving
 
 MEDIA_URL = '/images/'
